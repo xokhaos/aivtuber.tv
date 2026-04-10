@@ -1,0 +1,56 @@
+{
+    "cmake.sourceDirectory": "D:/code/moonlash/node_modules/nan",
+    // Ensure ESLint actively validates JS files in this workspace
+    "eslint.validate": [
+        "javascript",
+        "javascriptreact"
+    ],
+    // Optional: enable ESLint fix actions when you explicitly save
+    "editor.codeActionsOnSave": {
+        "source.fixAll.eslint": "explicit"
+    },
+    "terminal.integrated.profiles.linux": {
+
+        "bash": {
+            "path": "bash",
+            "icon": "terminal-bash"
+        },
+        "zsh": {
+            "path": "zsh"
+        },
+        "fish": {
+            "path": "fish"
+        },
+        "tmux": {
+            "path": "tmux",
+            "icon": "terminal-tmux"
+        },
+        "pwsh": {
+            "path": "pwsh",
+            "icon": "terminal-powershell"
+        }
+    },
+    "terminal.integrated.profiles.windows": {
+        "Cmder": {
+            "path": "C:\\Windows\\System32\\cmd.exe",
+            "args": ["/K", "C:\\Users\\Cipher\\myprograms\\cmder\\vendor\\bin\\vscode_init.cmd"],
+            "icon": "terminal-cmd"
+        }
+    },
+    "terminal.integrated.defaultProfile.windows": "Cmder",
+    "[javascript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescript]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[javascriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[typescriptreact]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    },
+    "[html]": {
+        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    }
+}

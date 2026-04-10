@@ -1,21 +1,157 @@
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-    <title>AI Vtuber</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #3a3a3a;
-            margin: 0;
-            padding: 0px;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>AI Vtuber</title>
+  <style>
+    :root {
+      --bg-top: #09111f;
+      --bg-bottom: #160f20;
+      --surface: rgba(10, 16, 29, 0.72);
+      --surface-border: rgba(255, 255, 255, 0.08);
+      --text: #f4f7fb;
+      --muted: #b8c4d6;
+      --accent: #52d6ff;
+      --shadow: 0 24px 60px rgba(0, 0, 0, 0.42);
+      --radius: 24px;
+      --embed-max: 620px;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    html,
+    body {
+      min-height: 100%;
+    }
+
+    body {
+      margin: 0;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      color: var(--text);
+      background:
+        radial-gradient(circle at top, rgba(82, 214, 255, 0.18), transparent 28%),
+        radial-gradient(circle at 80% 20%, rgba(255, 120, 185, 0.12), transparent 22%),
+        linear-gradient(180deg, var(--bg-top), var(--bg-bottom));
+    }
+
+    .page {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+        padding: 32px 24px 40px;
         }
-        p {
-            color: #cacaca;
+
+    .stage {
+        width: 100%;
+        max-width: 760px;
+        display: grid;
+        gap: 18px;
+        justify-items: center;
+      text-align: center;
+    }
+
+    .eyebrow {
+      margin: 0;
+      font-size: 0.78rem;
+      letter-spacing: 0.16em;
+      text-transform: uppercase;
+      color: var(--accent);
+    }
+
+    h1 {
+      margin: 0;
+      font-size: clamp(1.8rem, 4.4vw, 3.1rem);
+      line-height: 1.02;
+      font-weight: 700;
+    }
+
+    .intro {
+      margin: 0;
+      max-width: 34rem;
+      color: var(--muted);
+      font-size: 0.98rem;
+      line-height: 1.6;
+    }
+
+    .embed-shell {
+      width: 100%;
+      max-width: calc(var(--embed-max) + 28px);
+      padding: 14px;
+      border: 1px solid var(--surface-border);
+      border-radius: var(--radius);
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.08), rgba(255, 255, 255, 0.02));
+      box-shadow: var(--shadow);
+      backdrop-filter: blur(10px);
+    }
+
+    .embed-frame {
+      width: 100%;
+      max-width: var(--embed-max);
+      margin: 0 auto;
+      border-radius: calc(var(--radius) - 8px);
+      overflow: hidden;
+      background: #000;
+      aspect-ratio: 620 / 378;
+    }
+
+    .embed-frame iframe {
+      width: 100%;
+      height: 100%;
+      border: 0;
+      display: block;
+    }
+
+    .embed-frame img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+
+    a{
+        color: #2ba3d3;
+    }
+
+    @media (max-width: 699px) {
+        .page {
+            padding: 20px 14px 28px;
+            align-items: start;
         }
-    </style>
+
+        .embed-shell {
+            padding: 14px;
+        }
+    }
+  </style>
 </head>
 <body>
-    <div style="display: flex; align-items:center">
-        <p>welcome to my webzone. leave a comment if you want pizza roll. i can send a pizza roll in mail with an envelope.</p>
-    </div>
+  <main class="page">
+    <section class="stage" aria-label="Featured clip">
+      <p class="eyebrow">XO_Khaos</p>
+      <h1>AI Vtuber</h1>
+      <p class="intro">
+        welcome to my webzone. leave a comment if you want pizza roll. i can send a pizza roll in mail with an envelope.
+      </p>
+      <p>
+        <a href="https://www.twitch.tv/xo_khaos" target="_blank">TWITCH: xo_khaos</a>
+      </p>
+
+      <div class="embed-shell">
+        <div class="embed-frame">
+            <img src="./pic.png" />
+          <!-- <iframe
+            src="https://clips.twitch.tv/embed?clip=RespectfulEphemeralWombatWholeWheat-Bu3DXxLT8syt8hYy&parent=www.example.com"
+            frameborder="0"
+            allowfullscreen="true"
+            scrolling="no"
+            title="Twitch clip">
+          </iframe> -->
+        </div>
+      </div>
+    </section>
+  </main>
 </body>
 </html>
