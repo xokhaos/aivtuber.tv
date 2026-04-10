@@ -51,6 +51,8 @@
         "editor.defaultFormatter": "dbaeumer.vscode-eslint"
     },
     "[html]": {
-        "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+        "editor.defaultFormatter": "vscode.html-language-features",
+        "editor.tabSize": 4,
+        "editor.insertSpaces": true
     }
 }
