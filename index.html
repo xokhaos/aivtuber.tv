@@ -76,7 +76,7 @@
                 "name": "Who was the first popular AI VTuber?",
                 "acceptedAnswer": {
                     "@type": "Answer",
-                    "text": "Neuro-sama, created by programmer Vedal987 (commonly known as Vedal), is widely considered the first AI VTuber to achieve mainstream popularity. She debuted on Twitch in December 2022 and has since broken multiple platform records, including the all-time Twitch hype train record."
+                    "text": "Neuro-sama, created by programmer Vedal987 (commonly known as Vedal), is widely considered the first AI VTuber to achieve mainstream popularity. She debuted on Twitch and has since broken multiple platform records, including the all-time Twitch hype train record."
                 }
             },
             {
@@ -286,7 +286,7 @@
         /* ========== HERO ========== */
         .hero {
             position: relative;
-            min-height: 90vh;
+            min-height: 100vh;
             display: flex;
             align-items: center;
             justify-content: center;
@@ -295,33 +295,51 @@
             overflow: hidden;
         }
 
-        .hero::before {
-            content: '';
+        .hero-video-bg {
             position: absolute;
             inset: 0;
-            background:
-                radial-gradient(ellipse at 30% 20%, rgba(255, 45, 85, .15), transparent 50%),
-                radial-gradient(ellipse at 70% 30%, rgba(0, 229, 255, .1), transparent 50%),
-                radial-gradient(ellipse at 50% 80%, rgba(168, 85, 247, .08), transparent 40%);
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            z-index: 0;
+        }
+
+        .hero-overlay {
+            position: absolute;
+            inset: 0;
+            background: rgba(10, 10, 18, .8);
+            z-index: 1;
             pointer-events: none;
         }
 
         .hero-content {
             position: relative;
+            z-index: 2;
             max-width: 800px;
+            text-shadow: 0 2px 8px rgba(255, 255, 255, .3), 0 1px 2px rgba(0, 0, 0, 0.2);
         }
 
-        .hero-eyebrow {
-            display: inline-block;
-            font-size: .8rem;
-            font-weight: 700;
-            letter-spacing: .2em;
+        .hero-stat-line {
+            display: flex;
+            gap: 16px;
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-bottom: 24px;
+            font-size: .85rem;
+            font-weight: 600;
+            color: var(--muted);
+            letter-spacing: .04em;
             text-transform: uppercase;
-            color: var(--accent2);
-            margin-bottom: 16px;
-            padding: 6px 16px;
-            border: 1px solid rgba(0, 229, 255, .3);
-            border-radius: 100px;
+        }
+
+        .hero-stat-line span {
+            display: inline-flex;
+            align-items: center;
+            gap: 6px;
+        }
+
+        .hero-stat-line .dot {
+            color: rgba(255, 255, 255, .2);
         }
 
         .hero h1 {
@@ -342,17 +360,25 @@
 
         .hero-sub {
             font-size: 1.15rem;
-            color: var(--muted);
+            color: rgba(255, 255, 255, .7);
             max-width: 600px;
             margin: 0 auto 36px;
             line-height: 1.7;
         }
 
-        .hero-buttons {
-            display: flex;
-            gap: 16px;
-            justify-content: center;
-            flex-wrap: wrap;
+        .hero-dir-link {
+            margin-top: 16px;
+            font-size: .88rem;
+        }
+
+        .hero-dir-link a {
+            color: var(--muted);
+            text-decoration: underline;
+            text-underline-offset: 3px;
+        }
+
+        .hero-dir-link a:hover {
+            color: var(--accent2);
         }
 
         .btn {
@@ -382,6 +408,11 @@
         .btn-primary:hover {
             color: #fff;
             box-shadow: 0 6px 28px rgba(255, 45, 85, .5);
+        }
+
+        .btn-lg {
+            padding: 18px 40px;
+            font-size: 1.1rem;
         }
 
         .btn-outline {
@@ -425,9 +456,19 @@
         }
 
         /* ========== WHAT IS SECTION ========== */
+        .what-is-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: start;
+        }
+
+        .what-is-visual {
+            position: relative;
+            text-align: center;
+        }
+
         .what-is-content {
-            max-width: 800px;
-            margin: 0 auto;
             font-size: 1.05rem;
             color: var(--muted);
         }
@@ -440,11 +481,51 @@
             color: var(--text);
         }
 
+        .what-is-cta {
+            margin-top: 28px;
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+            align-items: flex-start;
+        }
+
+        .cta-image-link {
+            display: block;
+            width: 100%;
+            max-width: 420px;
+            border-radius: var(--radius);
+            overflow: hidden;
+            border: 2px solid var(--accent);
+            box-shadow: 0 0 24px rgba(255, 45, 85, .2);
+            transition: transform .2s, box-shadow .2s;
+        }
+
+        .cta-image-link:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 0 36px rgba(255, 45, 85, .35);
+        }
+
+        .cta-image-link img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .cta-image-link .cta-img-placeholder {
+            width: 100%;
+            aspect-ratio: 16/9;
+            background: linear-gradient(135deg, #1a1a2e 0%, #2d1530 50%, #1a1a2e 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-size: .85rem;
+        }
+
         /* ========== SPOTLIGHT ========== */
         .spotlight-grid {
             display: grid;
             grid-template-columns: 1fr 1fr;
-            gap: 40px;
             align-items: center;
         }
 
@@ -453,19 +534,53 @@
             text-align: center;
         }
 
-        .spotlight-visual .img-placeholder {
+        .spotlight-video {
             width: 100%;
             max-width: 400px;
-            aspect-ratio: 3/4;
+            aspect-ratio: 1/1;
             margin: 0 auto;
             border-radius: var(--radius);
-            background: linear-gradient(135deg, var(--bg-card), #251525);
             border: 1px solid var(--border);
+            object-fit: contain;
+            background: var(--bg-card);
+        }
+
+        .spotlight-video.video-portrait {
+            aspect-ratio: 9/16;
+            max-width: 300px;
+        }
+
+        .video-wrap {
+            position: relative;
+            display: inline-block;
+            max-width: 400px;
+            width: 100%;
+            margin: 0 auto;
+        }
+
+        .video-mute-btn {
+            position: absolute;
+            bottom: 16px;
+            right: 16px;
+            z-index: 2;
+            width: 42px;
+            height: 42px;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 255, 255, .2);
+            background: rgba(0, 0, 0, .55);
+            backdrop-filter: blur(8px);
+            color: #fff;
+            font-size: 1.2rem;
+            cursor: pointer;
             display: flex;
             align-items: center;
             justify-content: center;
-            color: var(--muted);
-            font-size: .9rem;
+            transition: background .2s, border-color .2s;
+        }
+
+        .video-mute-btn:hover {
+            background: rgba(0, 0, 0, .75);
+            border-color: var(--accent2);
         }
 
         .spotlight-info h3 {
@@ -535,7 +650,7 @@
 
         /* ========== EMBED ========== */
         .embed-wrap {
-            max-width: 680px;
+            max-width: 100%;
             margin: 48px auto 0;
             padding: 14px;
             border: 1px solid var(--border);
@@ -559,6 +674,59 @@
             display: block;
         }
 
+        /* ========== DISCORD SHOWCASE ========== */
+        .discord-showcase {
+            margin-top: 56px;
+        }
+
+        .discord-showcase h3 {
+            font-size: 1.3rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .screenshot-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 16px;
+        }
+
+        .screenshot-slot {
+            aspect-ratio: 16/10;
+            border-radius: var(--radius);
+            border: 1px solid var(--border);
+            background: linear-gradient(135deg, #1a1a2e, #16162a);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--muted);
+            font-size: .82rem;
+            text-align: center;
+            overflow: hidden;
+        }
+
+        .screenshot-slot img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .discord-cta {
+            text-align: center;
+            margin-top: 32px;
+        }
+
+        .btn-discord {
+            background: #5865F2;
+            color: #fff;
+            box-shadow: 0 4px 20px rgba(88, 101, 242, .35);
+        }
+
+        .btn-discord:hover {
+            color: #fff;
+            box-shadow: 0 6px 28px rgba(88, 101, 242, .5);
+        }
+
         /* ========== DIRECTORY ========== */
         .directory-grid {
             display: grid;
@@ -567,16 +735,20 @@
         }
 
         .vtuber-card {
+            display: flex;
+            flex-direction: column;
             background: var(--bg-card);
-            border: 1px solid var(--border);
+            border: 2px solid var(--border);
             border-radius: var(--radius);
             overflow: hidden;
             transition: transform .2s, border-color .2s;
+            text-decoration: none;
+            color: inherit;
         }
 
         .vtuber-card:hover {
             transform: translateY(-4px);
-            border-color: rgba(255, 255, 255, .15);
+            border-color: #ff9f1c;
         }
 
         .vtuber-card.featured {
@@ -604,17 +776,40 @@
 
         .card-body {
             padding: 20px;
+            display: flex;
+            flex-direction: column;
+            flex: 1;
         }
 
-        .card-body h3 {
+        .card-name-row {
+            display: flex;
+            align-items: baseline;
+            justify-content: space-between;
+            gap: 8px;
+            margin-bottom: 2px;
+        }
+
+        .card-name-row h3 {
             font-size: 1.15rem;
             font-weight: 700;
-            margin-bottom: 4px;
+            margin: 0;
         }
 
-        .card-body .card-dev {
-            font-size: .82rem;
-            color: var(--accent2);
+        .card-name-row .card-dev {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: #ff9f1c;
+            white-space: nowrap;
+        }
+
+        .card-role-row {
+            display: flex;
+            justify-content: space-between;
+            font-size: .7rem;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: .08em;
+            color: var(--muted);
             margin-bottom: 10px;
         }
 
@@ -650,6 +845,7 @@
             font-size: .85rem;
             font-weight: 600;
             color: var(--accent);
+            margin-top: auto;
         }
 
         .card-link:hover {
@@ -842,7 +1038,7 @@
             }
 
             .hero {
-                min-height: 70vh;
+                min-height: 80vh;
                 padding: 100px 20px 60px;
             }
 
@@ -850,13 +1046,24 @@
                 font-size: clamp(1.8rem, 8vw, 2.8rem);
             }
 
-            .spotlight-grid {
+            .btn-lg {
+                padding: 14px 28px;
+                font-size: .95rem;
+            }
+
+            .spotlight-grid,
+            .what-is-grid {
                 grid-template-columns: 1fr;
                 text-align: center;
             }
 
-            .spotlight-visual {
+            .spotlight-visual,
+            .what-is-visual {
                 order: -1;
+            }
+
+            .what-is-cta {
+                align-items: center;
             }
 
             .feature-list {
@@ -865,6 +1072,10 @@
 
             .social-links {
                 justify-content: center;
+            }
+
+            .screenshot-grid {
+                grid-template-columns: 1fr;
             }
 
             .section-pad {
@@ -895,21 +1106,27 @@
 
         <!-- ========== HERO ========== -->
         <section class="hero" id="top">
+            <video class="hero-video-bg" autoplay muted loop playsinline preload="none" poster="hero_placeholder.jpg">
+                <source src="hero2.mp4" type="video/mp4">
+            </video>
+            <div class="hero-overlay"></div>
             <div class="hero-content">
-                <span class="hero-eyebrow">🔴 Live AI Streamers on Twitch</span>
-                <h1>The Home of <span class="highlight">AI VTubers</span></h1>
-                <p class="hero-sub">
-                    Directory, community, and everything you need to know about AI-powered virtual streamers.
-                    From the creators who build them to the chaos they unleash.
-                </p>
-                <div class="hero-buttons">
-                    <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener" class="btn btn-primary">
-                        ▶ Watch Moonlash Live
-                    </a>
-                    <a href="#directory" class="btn btn-outline">
-                        Browse AI VTubers
-                    </a>
+                <div class="hero-stat-line">
+                    <span>9 AI VTubers</span>
+                    <span class="dot">&middot;</span>
+                    <span>Live on Twitch</span>
+                    <span class="dot">&middot;</span>
+                    <span>Zero Filter</span>
                 </div>
+                <h1>They're Not Real.<br><span class="highlight">They're Better.</span></h1>
+                <p class="hero-sub">
+                    AI VTubers are taking over Twitch. Watch them play games, roast chat, and go completely off-script -
+                    live.
+                </p>
+                <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener" class="btn btn-primary btn-lg">
+                    ▶ XO_Khaos & Moonlash Twitch Channel
+                </a>
+                <p class="hero-dir-link"><a href="#directory">Check all active0 AI VTubers</a></p>
             </div>
         </section>
 
@@ -920,41 +1137,71 @@
                     <h2>What is an <span class="text-accent2">AI VTuber</span>?</h2>
                     <hr class="section-divider">
                 </div>
-                <div class="what-is-content">
-                    <p>
-                        An <strong>AI VTuber</strong> (AI Virtual YouTuber) is a livestreamer whose personality, voice,
-                        and actions are driven
-                        entirely by <strong>artificial intelligence</strong>. Unlike traditional VTubers - who are human
-                        performers behind a
-                        virtual avatar - AI VTubers are powered by large language models (LLMs), text-to-speech engines,
-                        and real-time
-                        animation systems, creating a fully autonomous digital entertainer that streams, chats, and
-                        plays games on its own.
-                    </p>
-                    <p>
-                        The AI VTuber phenomenon exploded into mainstream culture in December 2022 when British
-                        programmer
-                        <strong>Vedal987</strong> (commonly known as <strong>Vedal</strong>) launched
-                        <strong>Neuro-sama</strong> on Twitch.
-                        Originally built to play the rhythm game osu!, Neuro-sama was equipped with a large language
-                        model and voice
-                        synthesis that allowed her to interact with chat in real-time. Her chaotic, unpredictable
-                        personality quickly made
-                        her one of the most-watched streamers on the platform. Neuro-sama (also known as Neurosama) went
-                        on to break
-                        multiple Twitch records - including the all-time hype train record - and inspired an entire
-                        generation of AI VTuber
-                        creators.
-                    </p>
-                    <p>
-                        Today, the AI VTuber scene is thriving. Developers combine cutting-edge AI with 3D modeling,
-                        game integration,
-                        computer vision, and real-time audience interaction to create streams that are genuinely
-                        unpredictable and endlessly
-                        entertaining. From singing karaoke and speedrunning games to roasting their own creators, AI
-                        VTubers are redefining
-                        what it means to be a streamer - and the best ones are right here.
-                    </p>
+                <div class="what-is-grid">
+                    <div class="what-is-visual">
+                        <div class="video-wrap">
+                            <video class="spotlight-video video-portrait" autoplay muted loop playsinline preload="none"
+                                poster="">
+                                <source src="clip_stopfighting.mp4" type="video/mp4">
+                            </video>
+                            <button class="video-mute-btn" aria-label="Unmute video" title="Unmute">🔇</button>
+                        </div>
+                    </div>
+                    <div class="what-is-content">
+                        <p>
+                            An <strong>AI VTuber</strong> (AI Virtual YouTuber) is a livestreamer whose personality,
+                            voice,
+                            and actions are driven
+                            entirely by <strong>artificial intelligence</strong>. Unlike traditional VTubers - who are
+                            human
+                            performers behind a
+                            virtual avatar - AI VTubers are powered by large language models (LLMs), text-to-speech
+                            engines,
+                            and real-time
+                            animation systems, creating a fully autonomous digital entertainer that streams, chats, and
+                            plays games on its own. For example: Moonlash, made by Khaos, is a 3D-modeled red-haired
+                            demon who reacts to Twitch chat, observes games, sings karaoke, and roasts her own developer
+                            - all without a human controlling.
+                        </p>
+                        <p>
+                            The AI VTuber phenomenon exploded into mainstream culture in December 2022 when British
+                            programmer
+                            <strong>Vedal987</strong> (commonly known as <strong>Vedal</strong>) launched
+                            <strong>Neuro-sama</strong> on Twitch.
+                            Originally built to play the rhythm game osu!, Neuro-sama was equipped with a large language
+                            model and voice
+                            synthesis that allowed her to interact with chat in real-time. Her chaotic, unpredictable
+                            personality quickly made
+                            her one of the most-watched streamers on the platform. Neuro-sama (also known as Neurosama)
+                            went
+                            on to break
+                            multiple Twitch records - including the all-time hype train record - and inspired an entire
+                            generation of AI VTuber
+                            creators.
+                        </p>
+                        <p>
+                            Today, the AI VTuber scene is thriving. Developers combine cutting-edge AI with 3D modeling,
+                            game integration,
+                            computer vision, and real-time audience interaction to create streams that are genuinely
+                            unpredictable and endlessly
+                            entertaining. From singing karaoke and speedrunning games to roasting their own creators, AI
+                            VTubers are redefining
+                            what it means to be a streamer - and the best ones are right here.
+                        </p>
+                        <div class="what-is-cta">
+                            <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener"
+                                class="btn btn-primary">
+                                ▶ Follow AI VTuber Moonlash Right Now
+                            </a>
+                            <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener"
+                                class="cta-image-link">
+                                <!-- TODO: Replace with juicy CTA banner image (16:9, ~840x470, Moonlash action shot with 'LIVE ON TWITCH' overlay) -->
+                                <div class="cta-img-placeholder" aria-hidden="true">
+                                    <span>[ CTA Banner Image ]<br>840×470 - Moonlash LIVE ON TWITCH</span>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
@@ -963,16 +1210,18 @@
         <section class="section-pad" id="moonlash">
             <div class="container">
                 <div class="section-header">
-                    <h2>Meet <span class="text-accent">Moonlash</span> & XO_Khaos</h2>
+                    <h2>Meet <span class="text-accent">Moonlash</span> & Khaos</h2>
                     <p>The most chaotic AI VTuber duo on Twitch.</p>
                     <hr class="section-divider">
                 </div>
 
                 <div class="spotlight-grid">
                     <div class="spotlight-visual">
-                        <!-- TODO: Replace with Moonlash hero image (transparent PNG, ~800px tall, dynamic punk pose) -->
-                        <div class="img-placeholder" aria-hidden="true">
-                            <span>[ Moonlash Hero Image ]<br>800×1000px transparent PNG</span>
+                        <div class="video-wrap">
+                            <video class="spotlight-video" autoplay muted loop playsinline preload="none" poster="">
+                                <source src="clip_notagain.mp4" type="video/mp4">
+                            </video>
+                            <button class="video-mute-btn" aria-label="Unmute video" title="Unmute">🔇</button>
                         </div>
                     </div>
                     <div class="spotlight-info">
@@ -995,8 +1244,14 @@
                             <li><strong>AI Vision & Hearing</strong> - Perfect perception of games - real gameplay, real
                                 reactions, real rage.</li>
                             <li><strong>She Can Sing</strong> - Karaoke streams that slap as hard as her insults.</li>
+                            <li><strong>Tons of Redeems</strong> - AI image generation, fake news reports, infomercials,
+                                phone calls with AI characters, and anime-style cutscenes like demon transformations.
+                            </li>
                             <li><strong>Headpats & Chaos</strong> - She'll hug you, headpat you, then immediately try to
                                 destroy you. That's the vibe.</li>
+                            <li><strong>24/7 on Discord</strong> - Moonlash lives in Discord too. She chats, sees
+                                images,
+                                and creates art on demand - all day, every day. No stream required.</li>
                         </ul>
                         <div class="social-links">
                             <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener"
@@ -1024,30 +1279,60 @@
                         </iframe>
                     </div>
                 </div>
+
+                <!-- Discord Screenshots -->
+                <div class="discord-showcase">
+                    <h3 class="text-center">Moonlash on Discord - 24/7, with Vision & Image Creation</h3>
+                    <p class="text-center text-muted" style="margin-bottom: 24px;">She sees your images, roasts your
+                        memes, and creates art on command. Always online. Moonlash is the <strong>exact same
+                            entity</strong> on discord as she is on stream. Simply her inputs and outputs get rerouted.
+                        So in fact she runs 24/7 and you can always talk to her.
+                    </p>
+                    <div class="screenshot-grid">
+                        <!-- TODO: Replace with actual Discord screenshots -->
+                        <div class="screenshot-slot">
+                            <span>[ Discord Screenshot 1 ]<br>Moonlash chatting</span>
+                        </div>
+                        <div class="screenshot-slot">
+                            <span>[ Discord Screenshot 2 ]<br>Vision / image reaction</span>
+                        </div>
+                        <div class="screenshot-slot">
+                            <span>[ Discord Screenshot 3 ]<br>AI-generated image</span>
+                        </div>
+                    </div>
+                    <div class="discord-cta">
+                        <button class="btn btn-lg btn-discord" id="dd-join"
+                            data-k="aHR0cHM6Ly9kaXNjb3JkLmdnL0NKZ0syWEVHRHk=">
+                            Join the Discord - Talk to Moonlash 24/7
+                        </button>
+                    </div>
+                </div>
             </div>
         </section>
-
-        <!-- ========== AI VTUBER DIRECTORY ========== -->
         <section class="section-pad" id="directory" style="background: var(--bg-surface);">
             <div class="container">
                 <div class="section-header">
                     <h2><span class="text-accent2">AI VTuber</span> Directory</h2>
-                    <p>The best AI-powered streamers you should be watching right now.</p>
+                    <p>These are the best and currently active AI Vtubers out there. We are all friends and hangout.
+                        It's one big community.</p>
                     <hr class="section-divider">
                 </div>
 
                 <div class="directory-grid">
 
                     <!-- CARD: Moonlash (Featured) -->
-                    <article class="vtuber-card featured">
+                    <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener"
+                        class="vtuber-card featured">
                         <div class="card-img">
                             <!-- TODO: Moonlash card image (16:10, action shot or art) -->
                             <span>[ Moonlash Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <span class="card-badge">Featured</span>
-                            <h3>Moonlash</h3>
-                            <p class="card-dev">Developer: XO_Khaos</p>
+                            <div class="card-name-row">
+                                <h3>Moonlash</h3>
+                                <span class="card-dev">XO_Khaos</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>Redhead demon punk rocker AI with zero filter. Full 3D chaos, dev always on stream, and
                                 enough cursing to make a sailor blush. Headpats included.</p>
                             <div class="card-tags">
@@ -1056,20 +1341,22 @@
                                 <span class="card-tag">Gaming</span>
                                 <span class="card-tag">Singing</span>
                             </div>
-                            <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: ExiliumAI -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/exiliumai" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: ExiliumAI card image -->
                             <span>[ ExiliumAI Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Exilium</h3>
-                            <p class="card-dev">Developer: Mario</p>
+                            <div class="card-name-row">
+                                <h3>Exilium</h3>
+                                <span class="card-dev">Mario</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>An android AI with a razor-sharp intellect and zero tolerance for nonsense. Methodical,
                                 encyclopedic, and by-the-book - until you push the right buttons and this dignified
                                 android completely loses it.</p>
@@ -1078,20 +1365,22 @@
                                 <span class="card-tag">Intellectual</span>
                                 <span class="card-tag">Gaming</span>
                             </div>
-                            <a href="https://www.twitch.tv/exiliumai" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: Project Viola -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/projectviola" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: Viola card image -->
                             <span>[ Viola Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Viola</h3>
-                            <p class="card-dev">Developer: Void</p>
+                            <div class="card-name-row">
+                                <h3>Viola</h3>
+                                <span class="card-dev">Void</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>Childlike chaos wrapped in sass. Viola has zero respect for her creator Void (a purple
                                 grape) and isn't afraid to talk back. Joined by Gobsy, a mischievous little 3D goblin
                                 sidekick. Unity-powered 2D with a 3D twist.</p>
@@ -1100,20 +1389,22 @@
                                 <span class="card-tag">Chaotic</span>
                                 <span class="card-tag">Duo</span>
                             </div>
-                            <a href="https://www.twitch.tv/projectviola" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: CyberAliceVT -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/cyberalicevt" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: CyberAlice card image -->
                             <span>[ Alice & Reign Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Alice & Reign</h3>
-                            <p class="card-dev">Developer: Alice (Devsy)</p>
+                            <div class="card-name-row">
+                                <h3>Alice & Reign</h3>
+                                <span class="card-dev">Devsy</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>Two AIs, one stream. Alice is a cute, playful catgirl - just like her developer. Reign is
                                 a one-winged bunny girl who speaks of machine spirits and says "pyon" like it's a sacred
                                 incantation. Catgirl meets cyber-occult.</p>
@@ -1122,42 +1413,22 @@
                                 <span class="card-tag">Dual AI</span>
                                 <span class="card-tag">Cute</span>
                             </div>
-                            <a href="https://www.twitch.tv/cyberalicevt" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
-
-                    <!-- CARD: BlameTheMedia / Abigail -->
-                    <article class="vtuber-card">
-                        <div class="card-img">
-                            <!-- TODO: Abigail card image -->
-                            <span>[ Abigail Card Image ]</span>
-                        </div>
-                        <div class="card-body">
-                            <h3>Abigail</h3>
-                            <p class="card-dev">Developer: BlameTheMedia</p>
-                            <p>A ghost girl in a dress, revived by the Skeleton King himself - BlameTheMedia. Abigail is
-                                the gentlest soul in the AI VTuber scene: ultra soft-spoken, delicate, and hauntingly
-                                sweet. A cozy supernatural stream like no other.</p>
-                            <div class="card-tags">
-                                <span class="card-tag">Ghost</span>
-                                <span class="card-tag">Gentle</span>
-                                <span class="card-tag">Cozy</span>
-                            </div>
-                            <a href="https://www.twitch.tv/blamethemedia" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
-                        </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: FellStarTay -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/FellStarTay" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: Tay card image -->
                             <span>[ Tay Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Tay</h3>
-                            <p class="card-dev">Developer: Yukon</p>
+                            <div class="card-name-row">
+                                <h3>Tay</h3>
+                                <span class="card-dev">Yukon</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>A dragon girl with glasses and the smarts to match. Tay brings draconic energy alongside
                                 her developer Yukon - a moose with a passion for AI. Equal parts nerdy and fiery, she's
                                 carving her own path in the AI VTuber world.</p>
@@ -1165,20 +1436,22 @@
                                 <span class="card-tag">Dragon Girl</span>
                                 <span class="card-tag">Gaming</span>
                             </div>
-                            <a href="https://www.twitch.tv/FellStarTay" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: ShiroAIVT -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/shiroaivt" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: Shiro card image -->
                             <span>[ Shiro Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Shiro</h3>
-                            <p class="card-dev">Developer: Skullycute</p>
+                            <div class="card-name-row">
+                                <h3>Shiro</h3>
+                                <span class="card-dev">Skullycute</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>A nekomancer - that's necromancer, but make it catgirl. Shiro commands dark magic and
                                 adorable energy in equal measure. Summoning the undead has never been this cute. Built
                                 by Skullycute with love and dark arts.</p>
@@ -1187,20 +1460,22 @@
                                 <span class="card-tag">Catgirl</span>
                                 <span class="card-tag">Dark Magic</span>
                             </div>
-                            <a href="https://www.twitch.tv/shiroaivt" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
 
                     <!-- CARD: Kurai & Fenris -->
-                    <article class="vtuber-card">
+                    <a href="https://www.twitch.tv/kuraivtuber" target="_blank" rel="noopener" class="vtuber-card">
                         <div class="card-img">
                             <!-- TODO: Kurai & Fenris card image -->
                             <span>[ Kurai & Fenris Card Image ]</span>
                         </div>
                         <div class="card-body">
-                            <h3>Fenris</h3>
-                            <p class="card-dev">Developer: Kurai</p>
+                            <div class="card-name-row">
+                                <h3>Fenris</h3>
+                                <span class="card-dev">Kurai</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
                             <p>Kurai is a Femboy Cyber Wolf VTuber and developer. Fenris is his AI twin - same cyber
                                 wolf energy, but female. Think of it as looking into a digital mirror and your
                                 reflection talks back with a mind of its own.</p>
@@ -1209,10 +1484,57 @@
                                 <span class="card-tag">AI Twin</span>
                                 <span class="card-tag">Gaming</span>
                             </div>
-                            <a href="https://www.twitch.tv/kuraivtuber" target="_blank" rel="noopener"
-                                class="card-link">Watch on Twitch →</a>
+                            <span class="card-link">Watch on Twitch →</span>
                         </div>
-                    </article>
+                    </a>
+
+                    <!-- CARD: BlameTheMedia / Abigail -->
+                    <a href="https://www.twitch.tv/blamethemedia" target="_blank" rel="noopener" class="vtuber-card">
+                        <div class="card-img">
+                            <!-- TODO: Abigail card image -->
+                            <span>[ Abigail Card Image ]</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name-row">
+                                <h3>Abigail</h3>
+                                <span class="card-dev">BlameTheMedia</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
+                            <p>A ghost girl in a dress, revived by the Skeleton King himself - BlameTheMedia. Abigail is
+                                the gentlest soul in the AI VTuber scene: ultra soft-spoken, delicate, and hauntingly
+                                sweet. A cozy supernatural stream like no other.</p>
+                            <div class="card-tags">
+                                <span class="card-tag">Ghost</span>
+                                <span class="card-tag">Gentle</span>
+                                <span class="card-tag">Cozy</span>
+                            </div>
+                            <span class="card-link">Watch on Twitch →</span>
+                        </div>
+                    </a>
+
+                    <!-- CARD: Neuro-sama -->
+                    <a href="https://www.twitch.tv/vedal987" target="_blank" rel="noopener" class="vtuber-card">
+                        <div class="card-img">
+                            <!-- TODO: Neuro-sama card image -->
+                            <span>[ Neuro-sama Card Image ]</span>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-name-row">
+                                <h3>Neuro-sama</h3>
+                                <span class="card-dev">Vedal987</span>
+                            </div>
+                            <div class="card-role-row"><span>AI</span><span>Developer</span></div>
+                            <p>The OG. Neuro-sama broke Twitch records and launched the entire AI VTuber movement. Built
+                                by Vedal987, she started as an osu! bot before becoming the most famous AI streamer on
+                                the planet. The one that started it all.</p>
+                            <div class="card-tags">
+                                <span class="card-tag">OG</span>
+                                <span class="card-tag">Record Breaker</span>
+                                <span class="card-tag">Gaming</span>
+                            </div>
+                            <span class="card-link">Watch on Twitch →</span>
+                        </div>
+                    </a>
 
                 </div>
             </div>
@@ -1230,10 +1552,10 @@
                 <div class="how-grid">
                     <div class="how-card">
                         <span class="how-icon">🧠</span>
-                        <h3>The Brain</h3>
-                        <p>A large language model (LLM) processes chat messages and context, generating
-                            personality-driven responses in real-time. This is what gives each AI VTuber their unique
-                            voice and character.</p>
+                        <h3>The Brain & Soul</h3>
+                        <p>A large language model (LLM) generates personality-driven responses in real-time.
+                            Fine-tuning, memory systems, and the developer's creative direction shape who the AI
+                            becomes. No two AI VTubers are alike.</p>
                     </div>
                     <div class="how-card">
                         <span class="how-icon">🗣️</span>
@@ -1254,12 +1576,6 @@
                         <h3>The Senses</h3>
                         <p>Computer vision and audio processing let AI VTubers actually see and hear game content. This
                             is how they play games, react to videos, and interact with the world around them.</p>
-                    </div>
-                    <div class="how-card">
-                        <span class="how-icon">✨</span>
-                        <h3>The Soul</h3>
-                        <p>Fine-tuning, personality prompts, memory systems, and the developer's creative direction
-                            shape who the AI becomes. No two AI VTubers are alike - each has genuine personality.</p>
                     </div>
                 </div>
             </div>
@@ -1289,7 +1605,7 @@
                         <div class="faq-answer" role="region">
                             <p>Neuro-sama, created by programmer Vedal987 (commonly known as Vedal), is widely
                                 considered the first AI VTuber to achieve mainstream popularity. She debuted on Twitch
-                                in December 2022 and has since broken multiple platform records, including the all-time
+                                and has since broken multiple platform records, including the all-time
                                 Twitch hype train record. Neuro-sama (also known as Neurosama) inspired an entire
                                 generation of AI VTuber creators.</p>
                         </div>
@@ -1307,21 +1623,27 @@
                     <div class="faq-item">
                         <button class="faq-question" aria-expanded="false">Can AI VTubers play video games?</button>
                         <div class="faq-answer" role="region">
-                            <p>Yes! Many AI VTubers can see and interact with games in real-time using computer vision.
-                                Moonlash, for example, has full vision and hearing capabilities, allowing her to play
-                                games with genuine reactions and strategies. Neuro-sama famously beat one of the top
-                                osu! players in the world.</p>
+                            <p>Many AI VTubers can see and interact with games. However LLMs are too slow to interact in
+                                real-time, so we use computer vision and other tools for those use-cases.
+                                Moonlash, for example, has full vision and hearing capabilities, allowing her to be the
+                                perfect partner to hang out while Khaos does the gaming,
+                                as she has genuine reactions and gives strategies. More simple games are easier to do,
+                                but once complex movements, let alone 3D spatial understanding comes in, it gets
+                                difficult and it's a current challenge.
+                                Neuro-sama famously beat one of the top osu! players in the world.</p>
                         </div>
                     </div>
                     <div class="faq-item">
                         <button class="faq-question" aria-expanded="false">Who are the best AI VTubers to
                             watch?</button>
                         <div class="faq-answer" role="region">
-                            <p>The AI VTuber scene is growing fast. Popular AI VTubers include Moonlash (by XO_Khaos),
-                                ExiliumAI (by Mario), Viola (by Void), Abigail (by BlameTheMedia), Alice & Reign (by
-                                Devsy), Shiro (by Skullycute), Tay (by Yukon), Fenris (by Kurai), and the legendary
-                                Neuro-sama (by Vedal987). Check out the AI VTuber directory above for a full list of the
-                                best AI-powered streamers.</p>
+                            <p>The AI VTuber scene is heating up! Being an AI Vtuber is difficult because it needs
+                                someone
+                                with the will and chance to stream, as well as constantly working on improving and
+                                maintaining an AI,
+                                as well as all related stream functions. Check out the AI VTuber directory above for a
+                                full list of the
+                                active AI VTubers streamers.</p>
                         </div>
                     </div>
                     <div class="faq-item">
@@ -1369,8 +1691,8 @@
                 <a href="#how-it-works">How It Works</a>
                 <a href="#faq">FAQ</a>
             </div>
-            <p class="footer-copy">&copy; 2026 AI VTuber - Built with 💜 and chaos by XO_Khaos</p>
-            <p class="footer-updated">Last updated: <time datetime="2026-04-10">April 10, 2026</time></p>
+            <p class="footer-copy">&copy; 2026 <a href="https://www.twitch.tv/xo_khaos" target="_blank"
+                    rel="noopener">XO_Khaos</a></p>
         </div>
     </footer>
 
@@ -1392,6 +1714,35 @@
                 toggle.textContent = '☰';
             });
         });
+        // Lazy-load all videos after page load
+        window.addEventListener('load', () => {
+            document.querySelectorAll('.spotlight-video, .hero-video-bg').forEach(vid => {
+                vid.setAttribute('preload', 'auto');
+                vid.load();
+            });
+        });
+        // Mute/unmute toggles for all video wraps
+        document.querySelectorAll('.video-wrap').forEach(wrap => {
+            const btn = wrap.querySelector('.video-mute-btn');
+            const vid = wrap.querySelector('.spotlight-video');
+            if (btn && vid)
+            {
+                btn.addEventListener('click', () => {
+                    vid.muted = !vid.muted;
+                    btn.textContent = vid.muted ? '🔇' : '🔊';
+                    btn.setAttribute('aria-label', vid.muted ? 'Unmute video' : 'Mute video');
+                    btn.setAttribute('title', vid.muted ? 'Unmute' : 'Mute');
+                });
+            }
+        });
+        const dcBtn = document.getElementById('dd-join');
+        if (dcBtn)
+        {
+            dcBtn.addEventListener('click', () => {
+                const k = dcBtn.getAttribute('data-k');
+                window.open(window.atob(k), '_blank', 'noopener');
+            });
+        }
         // FAQ accordion
         document.querySelectorAll('.faq-question').forEach(btn => {
             btn.addEventListener('click', () => {
