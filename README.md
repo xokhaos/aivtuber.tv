@@ -124,7 +124,7 @@ rerouted, so she runs 24/7 and you can always talk to her.
 | Twitch | [twitch.tv/xo_khaos](https://www.twitch.tv/xo_khaos) |
 | YouTube | [youtube.com/@XO_Khaos](https://www.youtube.com/@XO_Khaos/) |
 | Twitter / X | [twitter.com/XO_Khaos](https://twitter.com/XO_Khaos) |
-| TikTok | [tiktok.com/@moonlashkhaos](https://www.tiktok.com/@moonlashkhaos/) |
+| TikTok | [tiktok.com/@xokhaosmoon](https://www.tiktok.com/@xokhaosmoon/) |
 | Instagram | [instagram.com/xo_khaos](https://www.instagram.com/xo_khaos/) |
 | Bluesky | [bsky.app/profile/xokhaos.bsky.social](https://bsky.app/profile/xokhaos.bsky.social) |
 
@@ -289,7 +289,7 @@ into Moonlash at [twitch.tv/xo_khaos](https://www.twitch.tv/xo_khaos).
 [![Twitch](https://img.shields.io/badge/Twitch-XO__Khaos-9146FF?style=flat-square&logo=twitch&logoColor=white)](https://www.twitch.tv/xo_khaos)
 [![YouTube](https://img.shields.io/badge/YouTube-@XO__Khaos-FF0000?style=flat-square&logo=youtube&logoColor=white)](https://www.youtube.com/@XO_Khaos/)
 [![Twitter/X](https://img.shields.io/badge/X-@XO__Khaos-000000?style=flat-square&logo=x&logoColor=white)](https://twitter.com/XO_Khaos)
-[![TikTok](https://img.shields.io/badge/TikTok-@moonlashkhaos-000000?style=flat-square&logo=tiktok&logoColor=white)](https://www.tiktok.com/@moonlashkhaos/)
+[![TikTok](https://img.shields.io/badge/TikTok-@xokhaosmoon-000000?style=flat-square&logo=tiktok&logoColor=white)](https://www.tiktok.com/@xokhaosmoon/)
 [![Instagram](https://img.shields.io/badge/Instagram-@xo__khaos-E4405F?style=flat-square&logo=instagram&logoColor=white)](https://www.instagram.com/xo_khaos/)
 [![Bluesky](https://img.shields.io/badge/Bluesky-xokhaos-1185FE?style=flat-square)](https://bsky.app/profile/xokhaos.bsky.social)
 
