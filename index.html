@@ -1202,6 +1202,55 @@
             line-height: 1.7;
         }
 
+        /* ========== CONTACT ========== */
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .contact-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+            transition: border-color .2s;
+        }
+
+        .contact-card:hover {
+            border-color: rgba(255, 255, 255, .15);
+        }
+
+        .contact-icon {
+            font-size: 2rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .contact-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .contact-card p {
+            font-size: .88rem;
+            color: var(--muted);
+            line-height: 1.6;
+        }
+
+        .contact-card a {
+            color: var(--accent2);
+            font-weight: 600;
+        }
+
+        .contact-card a:hover {
+            color: var(--accent);
+        }
+
         /* ========== FOOTER ========== */
         .site-footer {
             border-top: 1px solid var(--border);
@@ -1338,6 +1387,32 @@
             }
         }
     </style>
+
+    <!-- Schema.org: ContactPage -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "ContactPage",
+        "name": "Contact Khaos",
+        "description": "This site is built and maintained by Khaos (XO_Khaos). Reach via Twitch, Discord, Twitter, or email.",
+        "url": "https://aivtuber.tv/#contact",
+        "mainEntity": {
+            "@type": "Person",
+            "name": "Khaos",
+            "alternateName": "XO_Khaos",
+            "email": "mailto:xo_khaos_business@protonmail.com",
+            "sameAs": [
+                "https://www.twitch.tv/xo_khaos",
+                "https://twitter.com/XO_Khaos",
+                "https://www.youtube.com/@XO_Khaos/",
+                "https://www.tiktok.com/@xokhaosmoon/",
+                "https://www.instagram.com/xo_khaos/",
+                "https://bsky.app/profile/xokhaos.bsky.social"
+            ]
+        }
+    }
+    </script>
+
 </head>
 
 <body>
@@ -1353,6 +1428,7 @@
                 <li><a href="#directory">Directory</a></li>
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#faq">FAQ</a></li>
+                <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
@@ -2040,6 +2116,44 @@
             </div>
         </section>
 
+        <!-- ========== CONTACT ========== -->
+        <section class="section-pad" id="contact">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Get in <span class="text-accent">Touch</span></h2>
+                    <p>This site is built and maintained by Khaos (XO_Khaos). Here's how to reach me.</p>
+                    <hr class="section-divider">
+                </div>
+
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <span class="contact-icon">🎮</span>
+                        <h3>Twitch</h3>
+                        <p>Come to the stream and chat. This is where I'm most active.</p>
+                        <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener">twitch.tv/xo_khaos</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">💬</span>
+                        <h3>Discord</h3>
+                        <p>I'm on Discord 24/7. The invite link is on my Twitch about page. Best way to reach me.</p>
+                        <a href="https://www.twitch.tv/xo_khaos" target="_blank" rel="noopener">Find it on my Twitch about page</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">🐦</span>
+                        <h3>Twitter / X</h3>
+                        <p>You can DM me, but I rarely check. Fair warning.</p>
+                        <a href="https://twitter.com/XO_Khaos" target="_blank" rel="noopener">twitter.com/XO_Khaos</a>
+                    </div>
+                    <div class="contact-card">
+                        <span class="contact-icon">✉️</span>
+                        <h3>Email</h3>
+                        <p>For business inquiries.</p>
+                        <a href="mailto:xo_khaos_business@protonmail.com">xo_khaos_business@protonmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
     </main>
 
     <!-- ========== FOOTER ========== -->
@@ -2053,6 +2167,7 @@
                 <a href="#directory">Directory</a>
                 <a href="#how-it-works">How It Works</a>
                 <a href="#faq">FAQ</a>
+                <a href="#contact">Contact</a>
             </div>
             <p class="footer-copy">&copy; 2026 <a href="https://www.twitch.tv/xo_khaos" target="_blank"
                     rel="noopener">XO_Khaos</a></p>
