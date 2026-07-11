@@ -1060,6 +1060,74 @@ a:hover
     color: var(--accent);
 }
 
+/* ========== DATASET ========== */
+.dataset-grid
+{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 24px;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.dataset-card
+{
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 28px 24px;
+    text-align: center;
+    transition: border-color .2s;
+}
+
+.dataset-card:hover
+{
+    border-color: rgba(255, 255, 255, .15);
+}
+
+.dataset-icon
+{
+    font-size: 2rem;
+    margin-bottom: 14px;
+    display: block;
+}
+
+.dataset-card h3
+{
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.dataset-card p
+{
+    font-size: .88rem;
+    color: var(--muted);
+    line-height: 1.6;
+    margin-bottom: 12px;
+}
+
+.dataset-card a
+{
+    color: var(--accent2);
+    font-weight: 600;
+    font-size: .85rem;
+    word-break: break-all;
+}
+
+.dataset-card a:hover
+{
+    color: var(--accent);
+}
+
+.dataset-license
+{
+    text-align: center;
+    margin-top: 32px;
+    color: var(--muted);
+    font-size: .85rem;
+}
+
 /* ========== FOOTER ========== */
 .site-footer
 {
