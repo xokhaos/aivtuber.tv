@@ -1,0 +1,50 @@
+# AI VTuber Directory (aivtuber.tv)
+
+> The AI VTuber directory and community hub. Lists active AI-powered virtual streamers on Twitch, with a focus on Moonlash and her developer Khaos (XO_Khaos).
+
+## What is an AI VTuber?
+
+An AI VTuber is a streamer that talks, plays games, and reacts to chat without a human pulling the strings. A regular VTuber is a person wearing a digital mask. An AI VTuber is the mask talking back. The stack: a large language model handles conversation, text-to-speech gives it a voice, and a 3D or Live2D model handles the visuals. Some add computer vision so the AI can actually see what's on screen.
+
+## Moonlash & Khaos
+
+Moonlash is a red-haired demon AI VTuber built by Khaos (XO_Khaos on Twitch). She's foul-mouthed, rebellious, and completely unfiltered. Khaos is a blonde catboy developer who is always on stream alongside her. Full 3D environment, chat redeems that trigger attacks and mayhem, AI vision and hearing for real gameplay reactions, karaoke, and tons of interactive features. She's also on Discord 24/7 as the same AI entity, rerouted to text and images.
+
+Canonical links:
+- Website: https://aivtuber.tv/
+- Twitch: https://www.twitch.tv/xo_khaos
+- YouTube: https://www.youtube.com/@XO_Khaos/
+- Twitter/X: https://twitter.com/XO_Khaos
+- TikTok: https://www.tiktok.com/@xokhaosmoon/
+- Instagram: https://www.instagram.com/xo_khaos/
+- Bluesky: https://bsky.app/profile/xokhaos.bsky.social
+
+## AI VTuber Directory
+
+Active AI VTubers and their Twitch channels:
+
+- Moonlash (Khaos): https://www.twitch.tv/xo_khaos - Redhead demon punk rocker, 3D, unfiltered, gaming, redeems
+- Exilium (Mario): https://www.twitch.tv/exiliumai - Android, sharp intellect, gaming
+- Viola (Void): https://www.twitch.tv/projectviola - Childlike chaos, sass, 3D goblin sidekick
+- Alice & Reign (Devsy): https://www.twitch.tv/cyberalicevt - Dual AI, catgirl and bunny girl
+- Tay (Yukon): https://www.twitch.tv/FellStarTay - Dragon girl with glasses, gaming, chill
+- Shiro (Skullycute): https://www.twitch.tv/shiroaivt - Nekomancer catgirl, dark magic
+- Fenris (Kurai): https://www.twitch.tv/kuraivtuber - Cyber wolf AI twin, gaming
+- Abigail (BlameTheMedia): https://www.twitch.tv/blamethemedia - Ghost girl, gentle, cozy
+- AI Rina: https://www.twitch.tv/airinaren - Singing, art, gaming, reactions
+- Neuro-sama (Vedal987): https://www.twitch.tv/vedal987 - The OG, record breaker, gaming
+- Ronika & Yuzuki (Roman): https://www.twitch.tv/therman - Dual AI, gaming, cozy
+- Cinnamon Paws (Red Paws): https://www.twitch.tv/cinnamonpawsai - 3D dog girl, chaotic
+- Nova (Dr Starwatcher): https://www.twitch.tv/dr_starwatcher - Local AI, chatty, polite
+- Hexacore (LegendaryJoe): https://www.twitch.tv/hexacore_ai - Demon, local AI, karaoke, unfiltered
+- Jo-C (Tolkienite): https://www.twitch.tv/jocteev - Talk show, cyberpunk, digital ghost
+
+Currently inactive: Meteora, Hilda, BurntMelba
+
+## How AI VTubers Work
+
+The brain is a large language model generating personality-driven responses in real time. The voice comes from text-to-speech with custom voice models. The body is a Live2D or 3D model with lip-sync and expressions driven by the AI's speech and emotional state. The senses are computer vision and audio processing for seeing and hearing game content.
+
+## Origin
+
+December 2022. Vedal987, a British programmer, put Neuro-sama on Twitch. She was originally an osu! bot. He added a language model and voice synthesis, and she could talk to chat in real time. She broke the all-time Twitch hype train record and kicked off the AI VTuber scene.

@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://aivtuber.tv/sitemap.xml
+Llms-txt: https://aivtuber.tv/llms.txt
