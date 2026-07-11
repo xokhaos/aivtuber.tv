@@ -1202,6 +1202,65 @@
             line-height: 1.7;
         }
 
+        /* ========== DATASET ========== */
+        .dataset-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .dataset-card {
+            background: var(--bg-card);
+            border: 1px solid var(--border);
+            border-radius: var(--radius);
+            padding: 28px 24px;
+            text-align: center;
+            transition: border-color .2s;
+        }
+
+        .dataset-card:hover {
+            border-color: rgba(255, 255, 255, .15);
+        }
+
+        .dataset-icon {
+            font-size: 2rem;
+            margin-bottom: 14px;
+            display: block;
+        }
+
+        .dataset-card h3 {
+            font-size: 1.05rem;
+            font-weight: 700;
+            margin-bottom: 8px;
+        }
+
+        .dataset-card p {
+            font-size: .88rem;
+            color: var(--muted);
+            line-height: 1.6;
+            margin-bottom: 12px;
+        }
+
+        .dataset-card a {
+            color: var(--accent2);
+            font-weight: 600;
+            font-size: .85rem;
+            word-break: break-all;
+        }
+
+        .dataset-card a:hover {
+            color: var(--accent);
+        }
+
+        .dataset-license {
+            text-align: center;
+            margin-top: 32px;
+            color: var(--muted);
+            font-size: .85rem;
+        }
+
         /* ========== CONTACT ========== */
         .contact-grid {
             display: grid;
@@ -1413,6 +1472,38 @@
     }
     </script>
 
+    <!-- Schema.org: Dataset -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Dataset",
+        "name": "AI VTuber Dataset 2026",
+        "description": "Structured dataset of 15 active AI VTubers streaming on Twitch. Includes developer, species, model type, tags, social links, and technical flags.",
+        "url": "https://aivtuber.tv/#dataset",
+        "creator": {
+            "@type": "Person",
+            "name": "Khaos",
+            "alternateName": "XO_Khaos",
+            "url": "https://www.twitch.tv/xo_khaos"
+        },
+        "license": "https://creativecommons.org/publicdomain/zero/1.0/",
+        "datePublished": "2026-07-11",
+        "dateModified": "2026-07-11",
+        "distribution": [
+            {
+                "@type": "DataDownload",
+                "encodingFormat": "application/json",
+                "contentUrl": "https://aivtuber.tv/dataset/ai-vtubers-2026.json"
+            },
+            {
+                "@type": "DataDownload",
+                "encodingFormat": "text/csv",
+                "contentUrl": "https://aivtuber.tv/dataset/ai-vtubers-2026.csv"
+            }
+        ]
+    }
+    </script>
+
 </head>
 
 <body>
@@ -1429,6 +1520,7 @@
                 <li><a href="#how-it-works">How It Works</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contact">Contact</a></li>
+                <li><a href="#dataset">Dataset</a></li>
             </ul>
         </div>
     </nav>
@@ -2154,6 +2246,45 @@
             </div>
         </section>
 
+        <!-- ========== DATASET ========== -->
+        <section class="section-pad" id="dataset" style="background: var(--bg-surface);">
+            <div class="container">
+                <div class="section-header">
+                    <h2>AI VTuber <span class="text-accent2">Dataset 2026</span></h2>
+                    <p>Structured data for all 15 active AI VTubers. Free to download, research-ready, CC0.</p>
+                    <hr class="section-divider">
+                </div>
+
+                <div class="dataset-grid">
+                    <div class="dataset-card">
+                        <span class="dataset-icon">{ }</span>
+                        <h3>JSON</h3>
+                        <p>Full nested dataset. 15 entries with all fields, social links, and boolean flags.</p>
+                        <a href="https://aivtuber.tv/dataset/ai-vtubers-2026.json" download>ai-vtubers-2026.json</a>
+                    </div>
+                    <div class="dataset-card">
+                        <span class="dataset-icon">CSV</span>
+                        <h3>CSV</h3>
+                        <p>Flat tabular version. Drop it into pandas, Excel, or Google Sheets. Pipe-delimited tags.</p>
+                        <a href="https://aivtuber.tv/dataset/ai-vtubers-2026.csv" download>ai-vtubers-2026.csv</a>
+                    </div>
+                    <div class="dataset-card">
+                        <span class="dataset-icon">API</span>
+                        <h3>API</h3>
+                        <p>Same data available as JSON endpoints. One route per VTuber and developer.</p>
+                        <a href="https://aivtuber.tv/api/index.json" target="_blank" rel="noopener">aivtuber.tv/api/</a>
+                    </div>
+                    <div class="dataset-card">
+                        <span class="dataset-icon">DOC</span>
+                        <h3>Schema</h3>
+                        <p>Full field documentation and usage examples.</p>
+                        <a href="https://aivtuber.tv/dataset/README.md" target="_blank" rel="noopener">dataset/README.md</a>
+                    </div>
+                </div>
+                <p class="dataset-license">Licensed CC0 1.0 (Public Domain). No attribution required. Last updated 2026-07-11.</p>
+            </div>
+        </section>
+
     </main>
 
     <!-- ========== FOOTER ========== -->
@@ -2168,6 +2299,7 @@
                 <a href="#how-it-works">How It Works</a>
                 <a href="#faq">FAQ</a>
                 <a href="#contact">Contact</a>
+                <a href="#dataset">Dataset</a>
             </div>
             <p class="footer-copy">&copy; 2026 <a href="https://www.twitch.tv/xo_khaos" target="_blank"
                     rel="noopener">XO_Khaos</a></p>

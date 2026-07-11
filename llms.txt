@@ -56,3 +56,13 @@ Static JSON API served via GitHub Pages at https://aivtuber.tv/api/. Each AI VTu
 - API index: https://aivtuber.tv/api/index.json
 - Example: https://aivtuber.tv/api/moonlash/index.json
 - Example: https://aivtuber.tv/api/khaos/index.json
+
+## Dataset
+
+A structured dataset of all 15 active AI VTubers is published at https://aivtuber.tv/dataset/. Available in JSON and CSV. CC0 (Public Domain).
+
+- JSON: https://aivtuber.tv/dataset/ai-vtubers-2026.json
+- CSV: https://aivtuber.tv/dataset/ai-vtubers-2026.csv
+- Schema docs: https://aivtuber.tv/dataset/README.md
+
+Fields: name, developer, type, species, gender, hair, eyes, model_type, tags, twitch, youtube, twitter, tiktok, instagram, bluesky, discord_247, local_ai, featured, status.
