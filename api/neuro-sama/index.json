@@ -1,0 +1,19 @@
+{
+    "name":  "Neuro-sama",
+    "slug":  "neuro-sama",
+    "type":  "AI",
+    "description":  "The OG. She broke Twitch records and started the whole AI VTuber thing. Began as an osu! bot, became the most famous AI streamer on the planet.",
+    "tags":  [
+                 "OG",
+                 "Record Breaker",
+                 "Gaming"
+             ],
+    "image":  "https://aivtuber.tv/neuro.webp",
+    "twitch":  "https://www.twitch.tv/vedal987",
+    "api_url":  "https://aivtuber.tv/api/neuro-sama",
+    "developer":  "Vedal987",
+    "developer_api_url":  "https://aivtuber.tv/api/vedal987",
+    "sameAs":  [
+                   "https://www.twitch.tv/vedal987"
+               ]
+}

@@ -1,0 +1,19 @@
+{
+    "name":  "Exilium",
+    "slug":  "exilium",
+    "type":  "AI",
+    "description":  "An android with a sharp intellect and zero patience for nonsense. Methodical, encyclopedic, by the book. Push the right buttons though and the whole thing falls apart in the best way.",
+    "tags":  [
+                 "Android",
+                 "Smartypants",
+                 "Gaming"
+             ],
+    "image":  "https://aivtuber.tv/exil.webp",
+    "twitch":  "https://www.twitch.tv/exiliumai",
+    "api_url":  "https://aivtuber.tv/api/exilium",
+    "developer":  "Mario",
+    "developer_api_url":  "https://aivtuber.tv/api/mario",
+    "sameAs":  [
+                   "https://www.twitch.tv/exiliumai"
+               ]
+}

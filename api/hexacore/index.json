@@ -1,0 +1,20 @@
+{
+    "name":  "Hexacore",
+    "slug":  "hexacore",
+    "type":  "AI",
+    "description":  "A foul-mouthed incubus demon with a sharp tongue. Does impressions, sings karaoke, watches streams so he can roast them live. Fully local, custom fine-tuned, always ready with a take you didn\u0027t ask for.",
+    "tags":  [
+                 "Demon",
+                 "Local AI",
+                 "Karaoke",
+                 "Unfiltered"
+             ],
+    "image":  "https://aivtuber.tv/hexa.webp",
+    "twitch":  "https://www.twitch.tv/hexacore_ai",
+    "api_url":  "https://aivtuber.tv/api/hexacore",
+    "developer":  "LegendaryJoe",
+    "developer_api_url":  "https://aivtuber.tv/api/legendaryjoe",
+    "sameAs":  [
+                   "https://www.twitch.tv/hexacore_ai"
+               ]
+}

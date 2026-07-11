@@ -1,0 +1,18 @@
+{
+    "name":  "Void",
+    "slug":  "void",
+    "type":  "Developer",
+    "description":  "Developer of Viola. Also known as a purple grape, apparently.",
+    "tags":  [
+                 "Duo",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/void.webp",
+    "twitch":  "https://www.twitch.tv/projectviola",
+    "api_url":  "https://aivtuber.tv/api/void",
+    "ai":  "Viola",
+    "ai_api_url":  "https://aivtuber.tv/api/viola",
+    "sameAs":  [
+                   "https://www.twitch.tv/projectviola"
+               ]
+}

@@ -1,0 +1,19 @@
+{
+    "name":  "LegendaryJoe",
+    "slug":  "legendaryjoe",
+    "type":  "Developer",
+    "description":  "Developer of Hexacore. Custom fine-tuned, fully local.",
+    "tags":  [
+                 "Demon",
+                 "Local AI",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/hexa.webp",
+    "twitch":  "https://www.twitch.tv/hexacore_ai",
+    "api_url":  "https://aivtuber.tv/api/legendaryjoe",
+    "ai":  "Hexacore",
+    "ai_api_url":  "https://aivtuber.tv/api/hexacore",
+    "sameAs":  [
+                   "https://www.twitch.tv/hexacore_ai"
+               ]
+}

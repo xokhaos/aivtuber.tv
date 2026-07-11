@@ -1,0 +1,19 @@
+{
+    "name":  "Alice \u0026 Reign",
+    "slug":  "alice-and-reign",
+    "type":  "AI",
+    "description":  "Two AIs on one stream. Alice is a playful catgirl, just like her developer. Reign is a one-winged bunny girl who talks about machine spirits and says pyon like it\u0027s a prayer. Catgirl meets cyber-occult. Or something.",
+    "tags":  [
+                 "Catgirl",
+                 "Dual AI",
+                 "Cute"
+             ],
+    "image":  "https://aivtuber.tv/alice.webp",
+    "twitch":  "https://www.twitch.tv/cyberalicevt",
+    "api_url":  "https://aivtuber.tv/api/alice-and-reign",
+    "developer":  "Devsy",
+    "developer_api_url":  "https://aivtuber.tv/api/devsy",
+    "sameAs":  [
+                   "https://www.twitch.tv/cyberalicevt"
+               ]
+}

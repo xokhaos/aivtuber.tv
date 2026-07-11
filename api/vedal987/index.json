@@ -1,0 +1,18 @@
+{
+    "name":  "Vedal987",
+    "slug":  "vedal987",
+    "type":  "Developer",
+    "description":  "British programmer who created Neuro-sama. Started the AI VTuber movement in December 2022.",
+    "tags":  [
+                 "OG",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/neuro.webp",
+    "twitch":  "https://www.twitch.tv/vedal987",
+    "api_url":  "https://aivtuber.tv/api/vedal987",
+    "ai":  "Neuro-sama",
+    "ai_api_url":  "https://aivtuber.tv/api/neuro-sama",
+    "sameAs":  [
+                   "https://www.twitch.tv/vedal987"
+               ]
+}

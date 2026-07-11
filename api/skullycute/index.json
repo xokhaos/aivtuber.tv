@@ -1,0 +1,18 @@
+{
+    "name":  "Skullycute",
+    "slug":  "skullycute",
+    "type":  "Developer",
+    "description":  "Developer of Shiro. Built with love and dark arts.",
+    "tags":  [
+                 "Nekomancer",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/shiro.webp",
+    "twitch":  "https://www.twitch.tv/shiroaivt",
+    "api_url":  "https://aivtuber.tv/api/skullycute",
+    "ai":  "Shiro",
+    "ai_api_url":  "https://aivtuber.tv/api/shiro",
+    "sameAs":  [
+                   "https://www.twitch.tv/shiroaivt"
+               ]
+}

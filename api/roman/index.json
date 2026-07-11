@@ -1,0 +1,18 @@
+{
+    "name":  "Roman",
+    "slug":  "roman",
+    "type":  "Developer",
+    "description":  "Developer of Ronika and Yuzuki. One dad, two AIs.",
+    "tags":  [
+                 "Dual AI",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/roman.webp",
+    "twitch":  "https://www.twitch.tv/therman",
+    "api_url":  "https://aivtuber.tv/api/roman",
+    "ai":  "Ronika \u0026 Yuzuki",
+    "ai_api_url":  "https://aivtuber.tv/api/ronika-and-yuzuki",
+    "sameAs":  [
+                   "https://www.twitch.tv/therman"
+               ]
+}

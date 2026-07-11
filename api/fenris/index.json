@@ -1,0 +1,19 @@
+{
+    "name":  "Fenris",
+    "slug":  "fenris",
+    "type":  "AI",
+    "description":  "Kurai is a femboy cyber wolf VTuber and developer. Fenris is his AI twin. Same cyber wolf energy, female. It\u0027s like looking into a digital mirror and your reflection talks back with a mind of its own.",
+    "tags":  [
+                 "Cyber Wolf",
+                 "AI Twin",
+                 "Gaming"
+             ],
+    "image":  "https://aivtuber.tv/kurai.webp",
+    "twitch":  "https://www.twitch.tv/kuraivtuber",
+    "api_url":  "https://aivtuber.tv/api/fenris",
+    "developer":  "Kurai",
+    "developer_api_url":  "https://aivtuber.tv/api/kurai",
+    "sameAs":  [
+                   "https://www.twitch.tv/kuraivtuber"
+               ]
+}

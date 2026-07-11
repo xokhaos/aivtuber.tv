@@ -1,0 +1,24 @@
+{
+    "name":  "Khaos",
+    "slug":  "khaos",
+    "type":  "Developer",
+    "description":  "Blonde catboy developer who built Moonlash. Always live alongside her on stream. Runs the aivtuber.tv directory.",
+    "tags":  [
+                 "3D",
+                 "Catboy",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/khaos.webp",
+    "twitch":  "https://www.twitch.tv/xo_khaos",
+    "api_url":  "https://aivtuber.tv/api/khaos",
+    "ai":  "Moonlash",
+    "ai_api_url":  "https://aivtuber.tv/api/moonlash",
+    "sameAs":  [
+                   "https://www.twitch.tv/xo_khaos",
+                   "https://www.youtube.com/@XO_Khaos/",
+                   "https://twitter.com/XO_Khaos",
+                   "https://www.tiktok.com/@xokhaosmoon/",
+                   "https://www.instagram.com/xo_khaos/",
+                   "https://bsky.app/profile/xokhaos.bsky.social"
+               ]
+}

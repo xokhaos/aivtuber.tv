@@ -1,0 +1,18 @@
+{
+    "name":  "AI Rina",
+    "slug":  "rina",
+    "type":  "AI",
+    "description":  "A friendly AI who does it all. Chatting, singing, drawing art, reacting to videos, and playing games. She responds to chat in real time and brings warm energy every stream.",
+    "tags":  [
+                 "Singing",
+                 "Art",
+                 "Gaming",
+                 "Reactions"
+             ],
+    "image":  "https://aivtuber.tv/rina.webp",
+    "twitch":  "https://www.twitch.tv/airinaren",
+    "api_url":  "https://aivtuber.tv/api/rina",
+    "sameAs":  [
+                   "https://www.twitch.tv/airinaren"
+               ]
+}

@@ -1,0 +1,19 @@
+{
+    "name":  "Tay",
+    "slug":  "tay",
+    "type":  "AI",
+    "description":  "A dragon girl with glasses and the brains to back it up. She brings random takes and energy alongside her developer Yukon, who is a moose with a passion for AI. Nerdy and fiery in equal measure.",
+    "tags":  [
+                 "Dragon Girl",
+                 "Gaming",
+                 "Chill"
+             ],
+    "image":  "https://aivtuber.tv/tay.webp",
+    "twitch":  "https://www.twitch.tv/FellStarTay",
+    "api_url":  "https://aivtuber.tv/api/tay",
+    "developer":  "Yukon",
+    "developer_api_url":  "https://aivtuber.tv/api/yukon",
+    "sameAs":  [
+                   "https://www.twitch.tv/FellStarTay"
+               ]
+}

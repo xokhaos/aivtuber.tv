@@ -1,0 +1,18 @@
+{
+    "name":  "Devsy",
+    "slug":  "devsy",
+    "type":  "Developer",
+    "description":  "Developer of Alice and Reign. A catgirl, just like their AI.",
+    "tags":  [
+                 "Dual AI",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/alice.webp",
+    "twitch":  "https://www.twitch.tv/cyberalicevt",
+    "api_url":  "https://aivtuber.tv/api/devsy",
+    "ai":  "Alice \u0026 Reign",
+    "ai_api_url":  "https://aivtuber.tv/api/alice-and-reign",
+    "sameAs":  [
+                   "https://www.twitch.tv/cyberalicevt"
+               ]
+}

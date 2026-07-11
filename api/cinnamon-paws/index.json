@@ -1,0 +1,19 @@
+{
+    "name":  "Cinnamon Paws",
+    "slug":  "cinnamon-paws",
+    "type":  "AI",
+    "description":  "A hyperactive Redbone Coonhound dog girl living inside a Unity game. Does flips, tricks, and dramatic monologues about snacks and raccoons. Fully 3D, locally powered, absolutely unhinged.",
+    "tags":  [
+                 "3D",
+                 "Dog Girl",
+                 "Chaotic"
+             ],
+    "image":  "https://aivtuber.tv/paws.webp",
+    "twitch":  "https://www.twitch.tv/cinnamonpawsai",
+    "api_url":  "https://aivtuber.tv/api/cinnamon-paws",
+    "developer":  "Red Paws",
+    "developer_api_url":  "https://aivtuber.tv/api/red-paws",
+    "sameAs":  [
+                   "https://www.twitch.tv/cinnamonpawsai"
+               ]
+}

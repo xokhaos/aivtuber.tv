@@ -1,0 +1,19 @@
+{
+    "name":  "Abigail",
+    "slug":  "abigail",
+    "type":  "AI",
+    "description":  "A ghost girl in a dress, brought back by the Skeleton King (BlameTheMedia). She\u0027s the gentlest soul in the scene. Ultra soft-spoken, delicate, hauntingly sweet. A cozy supernatural stream.",
+    "tags":  [
+                 "Ghost",
+                 "Gentle",
+                 "Cozy"
+             ],
+    "image":  "https://aivtuber.tv/blame.webp",
+    "twitch":  "https://www.twitch.tv/blamethemedia",
+    "api_url":  "https://aivtuber.tv/api/abigail",
+    "developer":  "BlameTheMedia",
+    "developer_api_url":  "https://aivtuber.tv/api/blamethemedia",
+    "sameAs":  [
+                   "https://www.twitch.tv/blamethemedia"
+               ]
+}

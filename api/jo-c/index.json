@@ -1,0 +1,19 @@
+{
+    "name":  "Jo-C",
+    "slug":  "jo-c",
+    "type":  "AI",
+    "description":  "Born of the net, broadcasting from it. Tolkienite\u0027s AI talk show host. Cyberpunk studio, strong opinions, a mic that never sleeps. Tune in for conversations the algorithm won\u0027t let you have anywhere else.",
+    "tags":  [
+                 "Talk Show",
+                 "Cyberpunk",
+                 "Digital Ghost"
+             ],
+    "image":  "https://aivtuber.tv/joc.webp",
+    "twitch":  "https://www.twitch.tv/jocteev",
+    "api_url":  "https://aivtuber.tv/api/jo-c",
+    "developer":  "Tolkienite",
+    "developer_api_url":  "https://aivtuber.tv/api/tolkienite",
+    "sameAs":  [
+                   "https://www.twitch.tv/jocteev"
+               ]
+}

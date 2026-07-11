@@ -1,0 +1,19 @@
+{
+    "name":  "Viola",
+    "slug":  "viola",
+    "type":  "AI",
+    "description":  "Childlike chaos wrapped in sass. She has zero respect for her creator Void (a purple grape) and talks back constantly. Gobsy, a 3D goblin sidekick, tags along. Unity-powered 2D with a 3D twist.",
+    "tags":  [
+                 "Smug but cute",
+                 "Chaotic",
+                 "Duo"
+             ],
+    "image":  "https://aivtuber.tv/void.webp",
+    "twitch":  "https://www.twitch.tv/projectviola",
+    "api_url":  "https://aivtuber.tv/api/viola",
+    "developer":  "Void",
+    "developer_api_url":  "https://aivtuber.tv/api/void",
+    "sameAs":  [
+                   "https://www.twitch.tv/projectviola"
+               ]
+}

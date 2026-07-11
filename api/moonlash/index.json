@@ -1,0 +1,25 @@
+{
+    "name":  "Moonlash",
+    "slug":  "moonlash",
+    "type":  "AI",
+    "description":  "Redhead demon punk rocker with zero filter. Full 3D chaos, dev always on stream, enough cursing to make a sailor blush. Headpats included.",
+    "tags":  [
+                 "3D",
+                 "Unfiltered",
+                 "Gaming",
+                 "Redeems"
+             ],
+    "image":  "https://aivtuber.tv/khaos.webp",
+    "twitch":  "https://www.twitch.tv/xo_khaos",
+    "api_url":  "https://aivtuber.tv/api/moonlash",
+    "developer":  "Khaos",
+    "developer_api_url":  "https://aivtuber.tv/api/khaos",
+    "sameAs":  [
+                   "https://www.twitch.tv/xo_khaos",
+                   "https://www.youtube.com/@XO_Khaos/",
+                   "https://twitter.com/XO_Khaos",
+                   "https://www.tiktok.com/@xokhaosmoon/",
+                   "https://www.instagram.com/xo_khaos/",
+                   "https://bsky.app/profile/xokhaos.bsky.social"
+               ]
+}

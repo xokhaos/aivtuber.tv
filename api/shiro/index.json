@@ -1,0 +1,19 @@
+{
+    "name":  "Shiro",
+    "slug":  "shiro",
+    "type":  "AI",
+    "description":  "A nekomancer. That\u0027s a necromancer, but a catgirl. She commands dark magic and adorable energy at the same time. Summoning the undead has never been this cute. Built by Skullycute with love and dark arts.",
+    "tags":  [
+                 "Nekomancer",
+                 "Catgirl",
+                 "Dark Magic"
+             ],
+    "image":  "https://aivtuber.tv/shiro.webp",
+    "twitch":  "https://www.twitch.tv/shiroaivt",
+    "api_url":  "https://aivtuber.tv/api/shiro",
+    "developer":  "Skullycute",
+    "developer_api_url":  "https://aivtuber.tv/api/skullycute",
+    "sameAs":  [
+                   "https://www.twitch.tv/shiroaivt"
+               ]
+}

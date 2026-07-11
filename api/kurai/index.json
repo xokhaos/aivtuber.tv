@@ -1,0 +1,19 @@
+{
+    "name":  "Kurai",
+    "slug":  "kurai",
+    "type":  "Developer",
+    "description":  "Femboy cyber wolf VTuber and developer. Created Fenris as his AI twin.",
+    "tags":  [
+                 "Cyber Wolf",
+                 "AI Twin",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/kurai.webp",
+    "twitch":  "https://www.twitch.tv/kuraivtuber",
+    "api_url":  "https://aivtuber.tv/api/kurai",
+    "ai":  "Fenris",
+    "ai_api_url":  "https://aivtuber.tv/api/fenris",
+    "sameAs":  [
+                   "https://www.twitch.tv/kuraivtuber"
+               ]
+}

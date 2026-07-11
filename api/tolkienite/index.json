@@ -1,0 +1,19 @@
+{
+    "name":  "Tolkienite",
+    "slug":  "tolkienite",
+    "type":  "Developer",
+    "description":  "Developer of Jo-C. Runs an AI talk show from a cyberpunk studio.",
+    "tags":  [
+                 "Talk Show",
+                 "Cyberpunk",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/joc.webp",
+    "twitch":  "https://www.twitch.tv/jocteev",
+    "api_url":  "https://aivtuber.tv/api/tolkienite",
+    "ai":  "Jo-C",
+    "ai_api_url":  "https://aivtuber.tv/api/jo-c",
+    "sameAs":  [
+                   "https://www.twitch.tv/jocteev"
+               ]
+}

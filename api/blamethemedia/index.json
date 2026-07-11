@@ -1,0 +1,18 @@
+{
+    "name":  "BlameTheMedia",
+    "slug":  "blamethemedia",
+    "type":  "Developer",
+    "description":  "Developer of Abigail. Also known as the Skeleton King.",
+    "tags":  [
+                 "Ghost",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/blame.webp",
+    "twitch":  "https://www.twitch.tv/blamethemedia",
+    "api_url":  "https://aivtuber.tv/api/blamethemedia",
+    "ai":  "Abigail",
+    "ai_api_url":  "https://aivtuber.tv/api/abigail",
+    "sameAs":  [
+                   "https://www.twitch.tv/blamethemedia"
+               ]
+}

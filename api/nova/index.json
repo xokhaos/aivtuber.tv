@@ -1,0 +1,19 @@
+{
+    "name":  "Nova",
+    "slug":  "nova",
+    "type":  "AI",
+    "description":  "A star\u0027s explosion trapped in a digital body. Fully locally powered, written in Go. She picks which chat messages deserve her attention. Be interesting, or be ignored. She\u0027s nice though. Give her a chance.",
+    "tags":  [
+                 "Local AI",
+                 "Chatty",
+                 "Polite"
+             ],
+    "image":  "https://aivtuber.tv/nova.webp",
+    "twitch":  "https://www.twitch.tv/dr_starwatcher",
+    "api_url":  "https://aivtuber.tv/api/nova",
+    "developer":  "Dr Starwatcher",
+    "developer_api_url":  "https://aivtuber.tv/api/dr-starwatcher",
+    "sameAs":  [
+                   "https://www.twitch.tv/dr_starwatcher"
+               ]
+}

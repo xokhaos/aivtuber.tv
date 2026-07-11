@@ -1,0 +1,152 @@
+{
+    "base_url":  "https://aivtuber.tv/api/",
+    "description":  "Static JSON API for AI VTuber directory data. Each route returns info about an AI VTuber or developer.",
+    "name":  "AI VTuber API",
+    "routes":  [
+                   {
+                       "path":  "/api/moonlash",
+                       "name":  "Moonlash",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/khaos",
+                       "name":  "Khaos",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/exilium",
+                       "name":  "Exilium",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/mario",
+                       "name":  "Mario",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/viola",
+                       "name":  "Viola",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/void",
+                       "name":  "Void",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/alice-and-reign",
+                       "name":  "Alice \u0026 Reign",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/devsy",
+                       "name":  "Devsy",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/tay",
+                       "name":  "Tay",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/yukon",
+                       "name":  "Yukon",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/shiro",
+                       "name":  "Shiro",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/skullycute",
+                       "name":  "Skullycute",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/fenris",
+                       "name":  "Fenris",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/kurai",
+                       "name":  "Kurai",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/abigail",
+                       "name":  "Abigail",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/blamethemedia",
+                       "name":  "BlameTheMedia",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/rina",
+                       "name":  "AI Rina",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/neuro-sama",
+                       "name":  "Neuro-sama",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/vedal987",
+                       "name":  "Vedal987",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/ronika-and-yuzuki",
+                       "name":  "Ronika \u0026 Yuzuki",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/roman",
+                       "name":  "Roman",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/cinnamon-paws",
+                       "name":  "Cinnamon Paws",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/red-paws",
+                       "name":  "Red Paws",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/nova",
+                       "name":  "Nova",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/dr-starwatcher",
+                       "name":  "Dr Starwatcher",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/hexacore",
+                       "name":  "Hexacore",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/legendaryjoe",
+                       "name":  "LegendaryJoe",
+                       "type":  "Developer"
+                   },
+                   {
+                       "path":  "/api/jo-c",
+                       "name":  "Jo-C",
+                       "type":  "AI"
+                   },
+                   {
+                       "path":  "/api/tolkienite",
+                       "name":  "Tolkienite",
+                       "type":  "Developer"
+                   }
+               ]
+}

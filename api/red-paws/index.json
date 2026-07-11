@@ -1,0 +1,18 @@
+{
+    "name":  "Red Paws",
+    "slug":  "red-paws",
+    "type":  "Developer",
+    "description":  "Developer of Cinnamon Paws. Built a Unity game for the AI to live inside.",
+    "tags":  [
+                 "3D",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/paws.webp",
+    "twitch":  "https://www.twitch.tv/cinnamonpawsai",
+    "api_url":  "https://aivtuber.tv/api/red-paws",
+    "ai":  "Cinnamon Paws",
+    "ai_api_url":  "https://aivtuber.tv/api/cinnamon-paws",
+    "sameAs":  [
+                   "https://www.twitch.tv/cinnamonpawsai"
+               ]
+}

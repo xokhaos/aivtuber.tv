@@ -48,3 +48,11 @@ The brain is a large language model generating personality-driven responses in r
 ## Origin
 
 December 2022. Vedal987, a British programmer, put Neuro-sama on Twitch. She was originally an osu! bot. He added a language model and voice synthesis, and she could talk to chat in real time. She broke the all-time Twitch hype train record and kicked off the AI VTuber scene.
+
+## JSON API
+
+Static JSON API served via GitHub Pages at https://aivtuber.tv/api/. Each AI VTuber and developer has their own route returning structured data (name, type, description, tags, image, Twitch link, social links, cross-references).
+
+- API index: https://aivtuber.tv/api/index.json
+- Example: https://aivtuber.tv/api/moonlash/index.json
+- Example: https://aivtuber.tv/api/khaos/index.json

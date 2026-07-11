@@ -1,0 +1,19 @@
+{
+    "name":  "Ronika \u0026 Yuzuki",
+    "slug":  "ronika-and-yuzuki",
+    "type":  "AI",
+    "description":  "Two AIs, one dad. Ronika is Roman\u0027s self-proclaimed AI daughter. Chaotic, weird, slowly learning to behave. Yuzuki is a fox-girl AI girlfriend who bites back when provoked. Gaming, video edits, wholesome family dysfunction.",
+    "tags":  [
+                 "Dual AI",
+                 "Gaming",
+                 "Cozy"
+             ],
+    "image":  "https://aivtuber.tv/roman.webp",
+    "twitch":  "https://www.twitch.tv/therman",
+    "api_url":  "https://aivtuber.tv/api/ronika-and-yuzuki",
+    "developer":  "Roman",
+    "developer_api_url":  "https://aivtuber.tv/api/roman",
+    "sameAs":  [
+                   "https://www.twitch.tv/therman"
+               ]
+}

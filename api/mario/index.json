@@ -1,0 +1,18 @@
+{
+    "name":  "Mario",
+    "slug":  "mario",
+    "type":  "Developer",
+    "description":  "Developer of Exilium, the android AI.",
+    "tags":  [
+                 "Android",
+                 "Developer"
+             ],
+    "image":  "https://aivtuber.tv/exil.webp",
+    "twitch":  "https://www.twitch.tv/exiliumai",
+    "api_url":  "https://aivtuber.tv/api/mario",
+    "ai":  "Exilium",
+    "ai_api_url":  "https://aivtuber.tv/api/exilium",
+    "sameAs":  [
+                   "https://www.twitch.tv/exiliumai"
+               ]
+}
